@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="swarm-feed-topic" content="__FEED_TOPIC__" />
+    <title>Latest work — Stillhere</title>
+    <style>
+      :root{font-family:Georgia,"Times New Roman",serif;color:#262920;background:#f4f3ee}*{box-sizing:border-box}body{margin:0}.wrap{max-width:760px;margin:0 auto;padding:10vh 28px 80px;animation:enter .6s cubic-bezier(.2,.7,.2,1) both}.mark{display:flex;align-items:center;gap:10px;font:650 12px/1.5 system-ui,sans-serif;letter-spacing:-.03em;color:#3d5541}.reader-logo{width:34px;height:34px;filter:drop-shadow(0 3px 7px #274d3825);animation:logo .8s cubic-bezier(.16,1,.3,1) both}.reader-logo path{stroke-dasharray:100;animation:draw 1.4s .2s ease-out both}.reader-logo circle{transform-box:fill-box;transform-origin:center;animation:pulse-node 3.4s 1.2s ease-in-out infinite}.rule{height:1px;background:#dcdcd3;margin:20px 0 42px}.state{font:12px/1.6 system-ui,sans-serif;color:#77786e}.state:not(.error)::before{content:"";display:inline-block;width:8px;height:8px;margin-right:9px;border-radius:50%;background:#789475;animation:pulse 1.2s ease-in-out infinite alternate}.state.error{color:#9e4e3e}h1{font:600 clamp(38px,8vw,66px)/1.07 system-ui,sans-serif;letter-spacing:-.06em;margin:12px 0 13px}.byline{font:12px/1.6 system-ui,sans-serif;color:#72746a}.content{font:18px/1.9 Georgia,serif;margin:45px 0;color:#3f4139}.content p{margin:0 0 1.4em}.foot{border-top:1px solid #dcdcd3;padding-top:18px;color:#77786e;font:11px/1.7 system-ui,sans-serif}.foot a{color:#456c50}.mark, .state, .byline, .foot{overflow-wrap:anywhere}#post{animation:enter .45s cubic-bezier(.2,.7,.2,1) both}.foot a:hover{color:#244b34}@keyframes enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{to{opacity:.35;transform:scale(.8)}}@keyframes logo{from{opacity:.4;transform:scale(.78) rotate(-12deg)}to{opacity:1;transform:scale(1) rotate(0)}}@keyframes draw{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}@keyframes pulse-node{50%{transform:scale(1.16)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="mark"><svg class="reader-logo" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="reader-brand-fill" x1="5" y1="4" x2="43" y2="45" gradientUnits="userSpaceOnUse"><stop stop-color="#4f8063"/><stop offset="1" stop-color="#244b36"/></linearGradient></defs><rect x="2" y="2" width="44" height="44" rx="15" fill="url(#reader-brand-fill)"/><path d="M12 30.5h8.5c2.8 0 4.5-1.6 4.5-4.1s-1.7-4.1-4.5-4.1h-1c-2.8 0-4.5-1.6-4.5-4.1s1.7-4.1 4.5-4.1H28c2.8 0 4.5 1.6 4.5 4.1v17" fill="none" stroke="#f8f6e8" stroke-width="2.8" stroke-linecap="round"/><circle cx="32.5" cy="35.2" r="3.6" fill="#d7e89a"/></svg><span>STILLHERE <span aria-hidden="true">·</span> PUBLISHED ON SWARM</span></div>
+      <div class="rule"></div>
+      <p class="state" id="status">Finding the publisher’s latest post…</p>
+      <article id="post" hidden>
+        <p class="byline" id="byline"></p>
+        <h1 id="title"></h1>
+        <div class="content" id="content"></div>
+        <footer class="foot">
+          This page follows a Swarm Feed. Availability depends on postage and network conditions.
+          <div><a id="raw-link" href="#">Open the stored post data</a></div>
+        </footer>
+      </article>
+    </main>
+    <script type="module" src="./reader-entry.js"></script>
+  </body>
+</html>
